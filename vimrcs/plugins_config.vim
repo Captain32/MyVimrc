@@ -46,41 +46,6 @@ set grepprg=/bin/grep\ -nH
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Nerd Tree
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:NERDTreeWinPos = "left"
-let NERDTreeShowHidden=0
-let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let g:NERDTreeWinSize=35
-map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark<Space>
-map <leader>nf :NERDTreeFind<cr>
-" auto open NERDTree
-" au VimEnter * NERDTree
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Nerd tree git plugin
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" 把没有变更的文件的括号去掉
-let g:NERDTreeGitStatusConcealBrackets = 0
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vim-multiple-cursors
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:multi_cursor_use_default_mapping=0
-
-" Default mapping
-let g:multi_cursor_start_word_key      = '<C-s>'
-let g:multi_cursor_select_all_word_key = '<A-s>'
-let g:multi_cursor_start_key           = 'g<C-s>'
-let g:multi_cursor_select_all_key      = 'g<A-s>'
-let g:multi_cursor_next_key            = '<C-s>'
-let g:multi_cursor_prev_key            = '<C-p>'
-let g:multi_cursor_skip_key            = '<C-x>'
-let g:multi_cursor_quit_key            = '<Esc>'
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => surround.vim config
 " Annotate strings with gettext 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -181,7 +146,8 @@ let g:coc_global_extensions = ['coc-tsserver','coc-html','coc-css', 'coc-json',
             \ 'coc-java','coc-pyright','coc-flutter',
             \ 'coc-emmet','coc-snippets','coc-xml','coc-yaml',
             \ 'coc-markdownlint','coc-highlight',
-            \ 'coc-clangd','coc-sh','coc-go','coc-sql']
+            \ 'coc-clangd','coc-sh','coc-go','coc-sql',
+            \ 'coc-explorer']
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -231,6 +197,11 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => coc explorer
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>e :CocCommand explorer --toggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Airline

@@ -28,9 +28,10 @@ set guioptions-=l
 set guioptions-=L
 
 " my Colorcheme
-let g:solarized_termcolors=256
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
+" colorscheme molokai
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Turn persistent undo on 

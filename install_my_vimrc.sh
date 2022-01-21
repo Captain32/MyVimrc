@@ -11,10 +11,7 @@ source ~/MyVimrc/vimrcs/basic.vim
 source ~/MyVimrc/vimrcs/filetypes.vim
 source ~/MyVimrc/vimrcs/plugins_config.vim
 source ~/MyVimrc/vimrcs/extended.vim
-try
-  source ~/MyVimrc/my_configs.vim
-catch
-endtry' > ~/.vimrc
+' > ~/.vimrc
 
 # install plugin
 vim +PlugInstall +qall

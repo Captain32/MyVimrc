@@ -56,8 +56,8 @@ command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set 7 lines to the cursor - when moving vertically using j/k
-set so=7
+" Set 0 lines to the cursor - when moving vertically using j/k
+set so=0
 
 " Avoid garbled characters in Chinese language windows OS
 let $LANG='en'
@@ -87,7 +87,7 @@ set hid
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
-set whichwrap+=<,>,h,l
+set whichwrap+=<,>,h,l,~,[,]
 
 " Ignore case when searching
 set ignorecase
@@ -126,6 +126,34 @@ endif
 
 " Add a bit extra margin to the left
 set foldcolumn=1
+
+" Set line number
+set number
+
+" Set show command
+set showcmd
+
+" Set cursorline font bold
+set cursorline
+
+" Map <C-^> to gb, 3gb will go to the third buffer
+nnoremap gb <C-^>
+
+" Two <Esc> make terminal into normal mode, could scroll
+tnoremap <Esc><Esc> <C-\><C-n>
+
+" Set term window 12 rows
+set termwinsize=12*0
+
+" Split a window will put the new window below the current one
+set splitbelow
+
+" Maps Shift-[up,down,left,right] to resizing a window split
+nnoremap <silent> <S-Left> <C-w><
+nnoremap <silent> <S-Down> <C-W>-
+nnoremap <silent> <S-Up> <C-W>+
+nnoremap <silent> <S-Right> <C-w>>
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -182,6 +210,9 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
+" Set shiftround, indent auto align
+set shiftround
 
 " Linebreak on 500 characters
 set lbr

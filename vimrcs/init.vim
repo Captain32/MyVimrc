@@ -17,6 +17,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+Plug 'mhinz/vim-startify'
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'liuchengxu/vista.vim'
 

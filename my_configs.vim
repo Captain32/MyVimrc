@@ -44,7 +44,7 @@ set softtabstop=4
 
 """"""""""""""""""NERDTree""""""""""""""""""
 " auto open NERDTree
-au VimEnter * NERDTree
+" au VimEnter * NERDTree
 " NERDTRee position
 let g:NERDTreeWinPos = "left"
 
@@ -230,3 +230,23 @@ vmap <leader>frd <Plug>LeaderfRgVisualRegexBoundary
 nmap <F9> :Vista!!<CR>
 " 需要额外安装字体，给禁了
 let g:vista#renderer#enable_icon = 0
+
+"""""""""""""""Startify"""""""""""""""
+" Startify配置
+let g:startify_files_number = 5
+let g:startify_session_autoload = 1
+let g:startify_custom_header = [
+   \' ╭───────────────────────────────────────────────────────────────╮', 
+   \' │                                                               │ ',
+   \' │    ████████                                                   │ ',
+   \' │   ██░░░░░░                       ██              ██           │ ',
+   \' │  ░██         ██████   ██████    ░██     ██████  ░░   ██████   │ ',
+   \' │  ░██        ░░░░░░██ ░██░░░██ ████████ ░░░░░░██  ██ ██░░░░██  │ ',
+   \' │  ░██         ███████ ░██  ░██░░░░██░░   ███████ ░██░██   ░██  │ ',
+   \' │  ░██        ██░░░░██ ░██  ░██   ░██ ██ ██░░░░██ ░██░██   ░██  │ ',
+   \' │  ░░████████░░████████░██████    ░█████░░████████░██░██   ░██  │ ',
+   \' │   ░░░░░░░░  ░░░░░░░░ ░██░░░     ░░░░░  ░░░░░░░░ ░░ ░░    ░░   │ ',
+   \' │                      ░██                                      │ ',
+   \' │                      ░░               I can do this all day!  │ ',
+   \' ╰───────────────────────────────────────────────────────────────╯ ', 
+   \]

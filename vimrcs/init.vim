@@ -15,6 +15,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 Plug 'maxbrunsfeld/vim-yankstack'
 Plug 'liuchengxu/vista.vim'

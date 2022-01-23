@@ -181,7 +181,7 @@ nmap <leader>rn <Plug>(coc-rename)
 " => coc explorer
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>e :CocCommand explorer --toggle<CR>
-map <leader>er <Cmd>call CocAction('runCommand', 'explorer.doAction', 'closest', {"name": "cd", "args": [getcwd()]})<CR>
+map <leader>er <Cmd>call CocAction('runCommand', 'explorer.doAction', 'closest', {"name": "cd", "args": [expand('%:p:h')]})<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Airline

@@ -126,7 +126,7 @@ let g:coc_global_extensions = ['coc-tsserver','coc-html','coc-css', 'coc-json',
             \ 'coc-emmet','coc-snippets','coc-xml','coc-yaml',
             \ 'coc-markdownlint','coc-highlight',
             \ 'coc-clangd','coc-sh','coc-go','coc-sql',
-            \ 'coc-explorer']
+            \ 'coc-explorer','coc-prettier']
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -176,6 +176,10 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
+
+" Formatting selected code.
+xmap <leader>cf  <Plug>(coc-format-selected)
+nmap <leader>cf  <Plug>(coc-format-selected)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => coc explorer

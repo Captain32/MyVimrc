@@ -1,6 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'dense-analysis/ale'
+" Ale makes my dev machine so slow
+" Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

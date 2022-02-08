@@ -308,3 +308,10 @@ let g:startify_custom_header = [
    \' │                      ░░               I can do this all day!  │ ',
    \' ╰───────────────────────────────────────────────────────────────╯ ', 
    \]
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-visual-multi
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:VM_maps = {}
+let g:VM_maps['Add Cursor Down'] = '∆' " MacOS ALT+j
+let g:VM_maps['Add Cursor Up'] = '˚' " MacOS ALT+k

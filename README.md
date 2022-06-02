@@ -114,3 +114,7 @@
 ## 个性化配置
 
 主题选用了`solarized`，由于主题颜色需要提前配置生效，所以在`extended.vim`中进行了配置。其他详见`my_configs.vim`。
+
+## VSCode配置
+
+VSCode中插件安装好Vim，然后在设置中找到vim对应的settings.json，把vscode_settings.json粘进去即可，用MyVimrc的basic.vim进行键映射，注意vscode中Vim插件识别不了vimrc中的set命令，所以只能用来配置映射，其他配置需要在vscode中配置(包含在了settings.json中)。

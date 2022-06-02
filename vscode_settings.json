@@ -1,0 +1,7 @@
+{
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "$HOME/MyVimrc/vimrcs/basic.vim",
+    "vim.leader": ",",
+    "vim.whichwrap": "<,>,h,l,~,[,]",
+    "vim.hlsearch": true
+}
